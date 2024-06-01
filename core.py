@@ -9,7 +9,7 @@ from langchain.chains import RetrievalQA
 from langchain_elasticsearch import ElasticsearchStore
 #import streamlit as st
 
-embeddings = GooglePalmEmbeddings(google_api_key = API)
+embeddings = GooglePalmEmbeddings(google_api_key = API) #set your own api key
 
 embedding = embeddings
 elastic_vector_search = ElasticsearchStore(
@@ -18,8 +18,8 @@ elastic_vector_search = ElasticsearchStore(
     embedding=embedding
 )
 
-doc_of_txt = get_txt_chunks("path to txt file")
-doc_of_pdf = get_pdf_chunks("path to pdf file")
+doc_of_txt = get_txt_chunks("path to txt file") #give your path of pdf file
+doc_of_pdf = get_pdf_chunks("path to pdf file") #give your path of txt file
 docs = doc_of_pdf + doc_of_txt
 
 #embeddings = embeddings
