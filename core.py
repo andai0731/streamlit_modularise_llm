@@ -18,8 +18,8 @@ elastic_vector_search = ElasticsearchStore(
     embedding=embedding
 )
 
-doc_of_txt = get_txt_chunks("/Users/vedant/Downloads/lang_chain_llm/docker.txt")
-doc_of_pdf = get_pdf_chunks("/Users/vedant/Downloads/lang_chain_llm/Vedant_Dwivedi_2024.pdf")
+doc_of_txt = get_txt_chunks("path to txt file")
+doc_of_pdf = get_pdf_chunks("path to pdf file")
 docs = doc_of_pdf + doc_of_txt
 
 #embeddings = embeddings
