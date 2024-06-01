@@ -9,7 +9,7 @@ from langchain.chains import RetrievalQA
 from langchain_elasticsearch import ElasticsearchStore
 #import streamlit as st
 
-embeddings = GooglePalmEmbeddings(google_api_key = "AIzaSyCmZ8bwEfRvdt_QXl45VF2NSZ2URfYFHPU")
+embeddings = GooglePalmEmbeddings(google_api_key = API)
 
 embedding = embeddings
 elastic_vector_search = ElasticsearchStore(
